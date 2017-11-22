@@ -33,16 +33,16 @@ You should be redirect to https://console.cloud.google.com/cloud-resource-manage
 Click on the button labeled Create service account. A dialog will appear. 
 
   - give your service account a name
-  - set it to Project Viewer
-  - select Furnish a new private key
-  - select Enable G Suite Domain-wide Delegation
-  - click CONFIGURE OAUTH CONSENT SCREEN
+  - Select Project => Project Viewer from the Role menu
+  - Select Furnish a new private key
+  - Select Enable G Suite Domain-wide Delegation
+  - Click CONFIGURE OAUTH CONSENT SCREEN
 
 You will be redirected to https://console.cloud.google.com/apis/credentials/consent
 
-  - select the email address of the super admin account that you will be impersonating
-  - give your project a name (eg, GSLogScraper)
-  - click Save
+  - Select the email address of the super admin account that you will be impersonating
+  - Cive your project a name (eg, GSLogScraper)
+  - Click Save
 
 You will be redirected back to the Create service account screen. Click CREATE.
 
