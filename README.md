@@ -73,7 +73,7 @@ You should now be able to access the admin api with that credentials file.
 # Run
 
 ```
- venv/bin/python nope.py --creds credsfile.json
+ venv/bin/python gasas.py --creds credsfile.json
 ```
 
 # Notes
