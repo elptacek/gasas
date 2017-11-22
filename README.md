@@ -34,7 +34,7 @@ Click on the button labeled Create service account. A dialog will appear.
 
   - Give your service account a name (eg, GSLogScraper)
   - Select Project => Project Viewer from the Role menu
-  - Select Furnish a new private key
+  - Select Furnish a new private key (leave it set to JSON)
   - Select Enable G Suite Domain-wide Delegation
   - Click CONFIGURE OAUTH CONSENT SCREEN
 
@@ -46,7 +46,7 @@ You will be redirected to https://console.cloud.google.com/apis/credentials/cons
 
 You will be redirected back to the Create service account screen. Click CREATE.
 
-This will create and download a credentials file. Guard this thing as if your life depends on it because you won't be able to get another creds file with a private key in it. You will have to start over from step 4. Good luck. Once you have downloaded this file (which, btw, you should never, ever display publicly under any circumstances), click DONE.
+This will create and download a credentials file in JSON. Give it a name (eg, credsfile.json) Guard this thing as if your life depends on it because you won't be able to get another creds file with a private key in it. You will have to start over from step 4. Good luck. Once you have downloaded this file (which, btw, you should never, ever display publicly under any circumstances), click DONE.
 
 ## Authorize this service account to access scopes
 
@@ -69,3 +69,9 @@ Browse to https://console.cloud.google.com/apis/dashboard. Select your project i
 Enter "admin" in the search box. Select Admin SDK. Select Admin SDK. A new page will load. Click the ENABLE button on this page.
 
 You should now be able to access the admin api with that credentials file.
+
+# Run
+
+```
+ venv/bin/python nope.py --creds credsfile.json
+```
