@@ -46,7 +46,7 @@ You will be redirected to https://console.cloud.google.com/apis/credentials/cons
 
 You will be redirected back to the Create service account screen. Click CREATE.
 
-This will create and download a credentials file in JSON. Give it a name (eg, credsfile.json) Guard this thing as if your life depends on it because you won't be able to get another creds file with a private key in it. You will have to start over from step 4. Good luck. Once you have downloaded this file (which, btw, you should never, ever display publicly under any circumstances), click DONE.
+This will create and download a credentials file in JSON. Give it a name (eg, credsfile.json) Guard this thing as if your life depends on it because you won't be able to get another creds file with a private key in it. You will have to start over. Good luck. Once you have downloaded this file (which, btw, you should never, ever display publicly under any circumstances), click DONE.
 
 ## Authorize this service account to access scopes
 
@@ -56,7 +56,7 @@ Open a new browser pane and paste this URL:
 
 https://admin.google.com/latacora.com/AdminHome?chromeless=1#OGX:ManageOauthClients
 
-Copy the client id from step 8 and paste it into the field labeled Client Name on this page. Then copy and paste the following into the field labeled One or More API Scopes:
+Copy the client id from the other pane and paste it into the field labeled Client Name on this page. Then copy and paste the following into the field labeled One or More API Scopes:
 
 https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly
 
