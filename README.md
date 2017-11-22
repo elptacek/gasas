@@ -32,7 +32,7 @@ You should be redirect to https://console.cloud.google.com/cloud-resource-manage
 
 Click on the button labeled Create service account. A dialog will appear. 
 
-  - give your service account a name
+  - Give your service account a name (eg, GSLogScraper)
   - Select Project => Project Viewer from the Role menu
   - Select Furnish a new private key
   - Select Enable G Suite Domain-wide Delegation
