@@ -75,3 +75,9 @@ You should now be able to access the admin api with that credentials file.
 ```
  venv/bin/python nope.py --creds credsfile.json
 ```
+
+# Notes
+
+Because there is no way (that I can find) to stream the activity data out of GSuite, I ran this under cron. In order to not have duplicate entries, I wrote a function to store and retrieve the last run time from the filesystem. This part is currently commented out.
+
+Ideally, I would like to run this as an AWS Lambda. For stupid reasons I'd rather not go into. Part of this whole journey included me trying to extend the oauth2client library (the deprecated one) to use Parameter Store instead of the filesystem for the creds storage and refresh. Attempting this caused me to find a bug in the oauth2client library and trying to file an issue for that bug is how I found out it is deprecated. 
